@@ -1,9 +1,17 @@
 #include <stdio.h>
 
+void func1(void);
+
 int main(void)
 {
-	printf("Hello, World!!\n");
-	printf("Hello, World!!\n");
+	func1();
 
 	return 0;
+}
+
+void func1(void)
+{
+	printf("call_func1\n");
+
+	return;
 }
