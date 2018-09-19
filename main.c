@@ -1,17 +1,13 @@
 #include <stdio.h>
-
-void func1(void);
+#include "module1.h"
 
 int main(void)
 {
-	func1();
+	int x;
+
+	x = input_func();
+
+	output_func(x);
 
 	return 0;
-}
-
-void func1(void)
-{
-	printf("call_func1\n");
-
-	return;
 }
