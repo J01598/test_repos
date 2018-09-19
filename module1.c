@@ -3,10 +3,15 @@
 
 int input_func(void)
 {
-	int	x;
+	int	x = 0;
+	char	f = 0;
 
-	printf("input value >> ");
-	scanf("%d", &x);
+	while(f != 'y'){
+		printf("input value >> ");
+		scanf("%d", &x);
+		printf("value : %d\n", x);
+		printf("OK? (y or n) >> ");
+	}
 
 	return x;
 }
